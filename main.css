@@ -1,0 +1,429 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* #first:hover {
+    position: relative;
+    top: 100px;
+    color:red;
+}
+
+.secondHeading {
+    padding: 0 16px;
+    color: blue;
+    font-size: 25px;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10px;
+}
+
+:root {
+    --text-color: green;
+}
+
+.box::before {
+    content: "anh chang dep trai";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: chartreuse;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: blue;
+    background-color: violet;
+    padding: 30px;
+    box-sizing: border-box;
+    background-clip:padding-box;
+    border: 10px dashed #ccc;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 400px;
+    background: url(https://images.pexels.com/photos/1545590/pexels-photo-1545590.jpeg?auto=compress&cs=tinysrgb&h=650&w=940) no-repeat top center ;
+}
+
+::selection {
+    background-color:violet;
+    color: aliceblue;
+}
+
+h1::first-letter {
+    font-size: 40px;
+    color: aqua;
+}
+ */
+/* --------- Navbar ---------*/
+.nav {
+    min-height: 42px;
+    background-color:coral;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    padding-left: 0;
+    margin: auto 16px;
+}
+
+.nav-item {
+    color:aliceblue;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+
+/*-------- Form-layout-------- */
+.form-container {
+    max-width: 720px;
+    padding: 32px;
+    margin: 36px auto 0 auto;
+    background-color: #fff;
+}
+
+.form-row {
+    padding: 8px 0;
+    display: flex;
+}
+
+.form-lable {
+    min-width: 90px;
+}
+
+.form-input {
+    flex: 1;
+}
+
+
+/* Column layout */
+.column-layout {
+    margin-top: 36px;
+    padding: 12px 0;
+    background-color: #fff;
+    display: flex;
+}
+.column-item {
+    padding: 0 16px;
+   
+}
+
+.sidebar-one {
+    flex: 1;
+    order: 1;
+}
+
+.main-column {
+    flex: 2;
+    order: 3;
+}
+
+.sidebar-two {
+    flex: 1;
+    order: 2;
+}
+
+/* ---------Feature-layout--------- */
+.feature-layout {
+    margin-top: 36px;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+@media (min-width: 720px) {
+    .feature-layout {
+        flex-direction: row;
+    }
+}
+.feature-item {
+    padding: 12px 16px;
+    margin: 16px auto 16px auto;
+    flex-basis: 25%;
+}
+
+.feature-item:nth-child(1) {
+    background-color:coral;
+}
+
+.feature-item:nth-child(2) {
+    background-color: aquamarine;
+}
+
+.feature-item:nth-child(3) {
+    background-color: violet;
+}
+
+/*------- Wrap-layout ------ */
+.wrap-layout {
+    background-color: bisque;
+    margin-top: 36px;
+    padding: 12px 0 32px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+.wrap-layout-item {
+    width: 148px;
+    height: 90px;
+    color: #fff;
+    text-align: center;
+    line-height: 90px;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 20px;
+    background-color: crimson;
+}
+
+
+/* --------Center-layout------- */
+.center-layout {
+    background-color: antiquewhite;
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    max-width: 640px;
+    height: 260px;
+    display: flex;
+}
+
+.center-layout-item {
+    font-size: 42px;
+    font-weight: 700;
+    margin: auto;
+}
+
+/*---- Chart-layout -----*/
+.chart-layout {
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    height: 320px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.chart-layout-item {
+    align-self: flex-end;
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    height: var(--percent);
+    background-color: deeppink;
+    animation: growth ease 1s;
+}
+
+@keyframes growth {
+    from {
+        opacity: 0;
+        height: calc(var(--percent) - 50%);
+    }
+    to {
+        opacity: 1;
+        height: var(--percent);
+    }
+}
+
+
+/*------ End -----*/
+.the-end {
+    margin: 12px auto 48px auto;
+    padding: 32px 0;
+    max-width: 740px;
+    min-height: 360px;
+    display: flex;
+}
+
+.the-end-first {
+    padding: 4px 16px;
+    background-color: rgb(44, 77, 56);
+    color: #fff;
+    flex: 1;
+}
+
+.the-end-second {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.the-end-second-one {
+    padding: 4px 16px;
+    background-color: rgb(200, 246, 199);
+    flex: 1;
+}
+
+.the-end-second-two {
+    padding: 4px 16px;
+    background-color: rgb(241, 158, 128);
+    flex: 1;
+}
+
+/* ---- Buttons -----*/
+.buttons {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    min-width: 140px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn + .btn {
+    margin-left: 20px;
+}
+
+.btn-success {
+    background-color: rgb(45, 240, 61);
+}
+
+.btn-warn {
+    background-color:orange;
+}
+
+.btn-erros {
+    background-color: rgb(252, 44, 44);
+}
+
+.btn-disable {
+    opacity: 0.5 !important;
+    cursor:default;
+}
+
+/*----- Toast-message ------*/
+#toast {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    z-index: 999999;
+}
+
+.toast {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    background-color: rgb(197, 191, 191);
+    border-radius: 2px;  
+    margin: 20px 0 ;
+    max-width: 400px;
+    min-width: 350px;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px rgba(0, 0 , 0, 0.3);
+    animation: slideInLeft ease 0.4s, fadeOut linear 1s 3s forwards;
+    transition: all linear 0.5s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+
+.toast-close {
+    padding: 0 16px;
+    font-size: 20px;
+    color: rgba(0, 0 , 0, 0.2);
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+}
+
+.toast-close:hover{
+    opacity: 0.6;
+}
+
+.toast-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(26, 25, 25);
+}
+
+.toast-msg {
+    font-size: 14px;
+    color: rgb(86, 84, 84);
+}
+
+.toast-body {
+    flex-grow: 1;
+}
+
+.toast-icon {
+    font-size: 24px;
+    padding: 16px;
+    
+}
+
+.toast-success .toast-icon {
+    color: blue;
+}
+
+.toast-info .toast-icon {
+    color: rgb(29, 99, 29);
+}
+
+.toast-warning .toast-icon {
+    color:rgb(222, 152, 21);
+}
+
+.toast-error .toast-icon {
+     color: rgb(252, 44, 44);
+}
+
+.toast-success {
+    border-color: blue;;
+}
+
+.toast-info {
+    border-color: rgb(29, 99, 29);
+}
+
+.toast-warning {
+    border-color: rgb(222, 152, 21);
+}
+
+.toast-error {
+    border-color: rgb(252, 44, 44);
+}
+
+.btn-toast {
+    display: flex;
+    justify-content: center;
+}
+

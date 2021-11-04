@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- phần đầu -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vy - Project1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- 
+         1. h1 => h6 heading
+         2. p - paragraph
+         3. img - image
+         4. a -anchor
+         5. ul, li - unordered list, list
+         6. table
+         7. input
+         8. button
+         9. div
+    
+    <h1 id="first">Tiêu đề: hello hello hello</h1>
+    <h1 class="secondHeading">Tiêu đề: hello hello hello</h1>
+    <h1 class="secondHeading">Tiêu đề: hello hello hello</h1>
+    <p> Đoạn văn: kỹ sử lưu sdfasfasfsadfsadfasdf</p>
+    <div id="header"></div>
+    <img id="image1" src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    <a href="https://www.pexels.com/vi-vn/tim-kiem/%C4%91%E1%BA%B9p/">Thẻ link liên kết</a>
+
+    <ul>
+        <li>cai dat moi truong</li>
+        <li>lam quan voi tool</li>
+        <li>html</li>
+        <li>css</li>
+    </ul>
+
+    <table>
+        <thead>
+            <th>Stt</th>
+            <th>Ten</th>
+            <th>Dia chi</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>le vy</td>
+                <td>bac ninh</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="box"> Box content</div>
+
+    <input type="text">
+    <input type="checkbox" name="" id="">
+    <input type="button" value="dang ky"> -->
+
+    <!-- Toast-message -->
+    <!-- Success -->
+    <div id="toast"></div>
+
+
+    <!-- Toast-Info 
+    <div class="toast toast-info">
+        <div class="toast-icon toast-icon-info">
+            <i class="fa-solid fa-circle-question"></i>
+        </div>
+        <div class="toast-body">
+            <h3 class="toast-title">Info</h3>
+            <p class="toast-msg">Truy cap may chu thanh cong</p>
+        </div>
+        <div class="toast-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+
+    ---- toast- Warning -----
+    <div class="toast toast-warning">
+        <div class="toast-icon toast-icon-warning">
+            <i class="fa-solid fa-circle-exclamation"></i>
+        </div>
+        <div class="toast-body">
+            <h3 class="toast-title">Warning</h3>
+            <p class="toast-msg">Truy cap may chu thanh cong</p>
+        </div>
+        <div class="toast-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+
+    ---- Toast-Error ----
+    <div class="toast toast-error">
+        <div class="toast-icon toast-icon-error">
+            <i class="fa-solid fa-circle-exclamation"></i>
+        </div>
+        <div class="toast-body">
+            <h3 class="toast-title">Error</h3>
+            <p class="toast-msg">Truy cap may chu thanh cong</p>
+        </div>
+        <div class="toast-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div> -->
+
+    <!-- Navbar -->
+    <div class="nav">
+        <ul class="nav-list">
+            <li class="nav-item">Giới thiệu</li>
+            <li class="nav-item">Kết nối</li>
+            <li class="nav-item">Tải ứng dụng</li>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-item">Đăng ký</li>
+            <li class="nav-item">Đăng nhập</li>
+        </ul>
+    </div>
+
+
+    <!-- Form layout -->
+    <div class="form-container">
+        <form action="" class="form">
+            <div class="form-row">
+                <label class="form-lable" for="name">Name</label>
+                <input class="form-input" type="text" id="name">
+            </div>
+            <div class="form-row">
+                <label class="form-lable" for="password">Password</label>
+                <input class="form-input" type="password" id="password">
+            </div>
+        </form>
+    </div>
+
+    <!-- buttons-toast -->
+    <div class="btn-toast">
+        <div onclick="showSuccessToast();" class="btn btn-success">Show success toast</div>
+        <div onclick="showErrorToast();" class="btn btn-erros">Show error toast</div>
+    </div>
+
+    <!-- Column layout -->
+    <div class="column-layout">
+        <div class="column-item sidebar-one">
+            <h2>Sidebar one</h2>
+            <p>Supply chain disruptions, a worker shortage and pain at the gasoline pump have made inflation an economic and political problem for President Biden.</p>
+        </div>
+        <div class="column-item main-column">
+            <h2>Main column</h2>
+            <p>Executives from YouTube, Snap and TikTok are in Washington to face questions over concerns that their platforms harm children and teenagers. Here’s the latest.</p>
+            <p>In the fallout of the release of the Facebook Papers, one pressing question is whether the Securities and Exchange Commission will add to the company’s woes</p>
+        </div>
+        <div class="column-item sidebar-two">
+            <h2>Sidebar two</h2>
+            <p>I am asking for answers,” Aisyn’s grandmother Gilda Emerson-Celestin said in late September at a funeral home in Brooklyn where Aisyn, 4, lay in a white suit coat</p>
+        </div>
+    </div>
+
+    <!-- Feature layout -->
+    <div class="feature-layout">
+        <div class="feature-item">
+            <h2>Feature 1</h2>
+            <p>The recommended authorization of Pfizer-BioNTech’s vaccine brings about 28 million children a major step closer to becoming eligible for shots.</p>
+        </div>
+        <div class="feature-item">
+            <h2>Feature 2</h2>
+            <p>The recommended authorization of Pfizer-BioNTech’s vaccine brings about 28 million children a major step closer to becoming eligible for shots.</p>
+        </div>
+        <div class="feature-item">
+            <h2>Feature 3</h2>
+            <p>The recommended authorization of Pfizer-BioNTech’s vaccine brings about 28 million children a major step closer to becoming eligible for shots.</p>
+        </div>
+    </div>
+
+
+    <!-- Wrap layout -->
+    <div class="wrap-layout">
+        <div class="wrap-layout-item">1</div>
+        <div class="wrap-layout-item">2</div>
+        <div class="wrap-layout-item">3</div>
+        <div class="wrap-layout-item">4</div>
+        <div class="wrap-layout-item">5</div>
+    </div>
+
+    <!-- Center-layout -->
+    <div class="center-layout">
+        <h3 class="center-layout-item">Center item</h3>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart-layout">
+        <div class="chart-layout-item" style="--percent: 10%">10%</div>
+        <div class="chart-layout-item" style="--percent: 30%">30%</div>
+        <div class="chart-layout-item" style="--percent: 20%">20%</div>
+        <div class="chart-layout-item" style="--percent: 40%">40%</div>
+        <div class="chart-layout-item" style="--percent: 90%">90%</div>
+        <div class="chart-layout-item" style="--percent: 80%">80%</div>
+        <div class="chart-layout-item" style="--percent: 40%">40%</div>
+        <div class="chart-layout-item" style="--percent: 20%">20%</div>
+        <div class="chart-layout-item" style="--percent: 10%">10%</div>
+        <div class="chart-layout-item" style="--percent: 30%">30%</div>
+        <div class="chart-layout-item" style="--percent: 50%">50%</div>
+        <div class="chart-layout-item" style="--percent: 60%">60%</div>
+    </div>
+
+    <!-- End -->
+    <div class="the-end">
+        <div class="the-end-first">
+            <p>
+                <h2>In the United States</h2> an F.D.A. panel votes to recommend the Pfizer-BioNTech vaccine for children ages 5 to 11. China locks down a city of four million over a small outbreak.</p>
+            <p>In the United States, an F.D.A. panel votes to recommend the Pfizer-BioNTech vaccine for children ages 5 to 11. China locks down a city of four million over a small outbreak.</p>
+            <p>In the United States, an F.D.A. panel votes to recommend the Pfizer-BioNTech vaccine for children ages 5 to 11. China locks down a city of four million over a small outbreak.</p>
+        </div>
+        <div class="the-end-second">
+            <div class="the-end-second-one">
+                <p>
+                    <h2>A self-appointed warrior</h2> against hypocrisy, he revolutionized comedy in the 1950s by addressing political and social issues.</p>
+            </div>
+            <div class="the-end-second-two">
+                <p>
+                    <h2>As the pandemic forced</h2> most players online, cheating consumed the game’s highest levels. Top players say a tight-lipped culture is finally changing.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="btn btn-success btn-disable">GO TO NEXT APPROVAL</button>
+        <button class="btn btn-warn">OK</button>
+        <button class="btn btn-erros">TRY AGAIN</button>
+    </div>
+
+    <script>
+        function toast({
+            title = '',
+            message = '',
+            type = 'info',
+            duration = 3000
+        }) {
+            const main = document.getElementById('toast');
+            if (main) {
+                const toast = document.createElement('div');
+                //Auto remove toast
+                const autoRemoveId = setTimeout(function() {
+                    main.removeChild(toast);
+                }, duration + 1000)
+
+                //Remove toast when clicked
+                toast.onclick = function(e) {
+                    if (e.target.closest('.toast-close')) {
+                        main.removeChild(toast);
+                        clearTimeout(autoRemoveId)
+                    }
+                }
+                const icons = {
+                    success: 'fa-solid fa-circle-check',
+                    info: 'fa-solid fa-circle-question',
+                    warning: 'fa-solid fa-circle-exclamation',
+                    error: 'fa-solid fa-circle-exclamation',
+                };
+                const icon = icons[type];
+                const delay = (duration / 1000).toFixed(2);
+
+                toast.classList.add('toast', `toast-${type}`);
+                toast.innerHTML = `
+                    <div class="toast-icon">
+                       <i class="${icon}"></i>
+                    </div>
+                    <div class="toast-body">
+                       <h3 class="toast-title">${title}</h3>
+                       <p class="toast-msg">${message}</p>
+                    </div>
+                    <div class="toast-close">
+                       <i class="fa-solid fa-xmark"></i>
+                    </div>
+                `;
+                main.appendChild(toast)
+
+
+            }
+        }
+
+
+
+        function showSuccessToast() {
+            toast({
+                title: 'Thành công',
+                message: 'Truy cap may chu thanh cong',
+                type: 'success',
+                duration: 3000
+            });
+        }
+
+        function showErrorToast() {
+            toast({
+                title: 'Thất bại',
+                message: 'Truy cap may chu that bai!',
+                type: 'error',
+                duration: 3000
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
